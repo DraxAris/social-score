@@ -1,0 +1,40 @@
+/* (C) Octa Con */
+body {
+	background: linear-gradient(to bottom right, #fd9, #0f9);
+	min-height: 100vh;
+	
+	font-family: 'Cabin', sans-serif;
+   
+}
+#cover {
+    
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* only used for background overlay not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    border-radius: 10px;
+}
+.actions-click{
+    width: 100%; text-align: center;
+    padding-top: 5%;
+}
